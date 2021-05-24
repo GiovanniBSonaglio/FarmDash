@@ -11,7 +11,15 @@ config_version=4
 [application]
 
 config/name="FarmDash"
+run/main_scene="res://World/World.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=380
+window/size/height=160
+window/size/test_width=1024
+window/size/test_height=720
 
 [importer_defaults]
 
