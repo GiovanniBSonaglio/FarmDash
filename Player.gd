@@ -1,8 +1,12 @@
 extends Node
 
 onready var nav_2d: Navigation2D = get_tree().get_root().get_node("World").get_node("Map").get_node("Navigation2D")
+onready var spawn: Position2D = get_tree().get_root().get_node("World").get_node("Map").get_node("SpawnPoint")
 onready var line_2d: Line2D = $Line2D
 onready var character: Sprite = $Character
+
+func _ready():
+	character.global_position = spawn.position
 
 func _unhandled_input(event):
 	if not event is InputEventMouseButton:

@@ -7,6 +7,7 @@ var path : = PoolVector2Array() setget set_path
 var direction = ''
 
 func _ready():
+	
 	set_process(false)
 	
 func _process(delta: float):
