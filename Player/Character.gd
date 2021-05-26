@@ -18,7 +18,7 @@ func _process(delta: float):
 func move_along_path(distance: float):
 	var start_point: = position
 
-	for i in range(path.size()):
+	for _i in range(path.size()):
 		var distance_to_next : = start_point.distance_to(path[0])
 		
 		if distance <= distance_to_next and distance >= 0.0:
