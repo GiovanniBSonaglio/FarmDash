@@ -6,5 +6,8 @@
 [node name="World" type="Node"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+z_index = 1
+z_as_relative = false
 
 [node name="Map" parent="." instance=ExtResource( 2 )]
+z_as_relative = false
